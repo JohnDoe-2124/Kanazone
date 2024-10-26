@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KatakanaActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="0dp">
+            <!-- Toolbar -->
+            <!-- Button Set 1 -->
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="#DE3213"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:titleTextColor="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:gravity="center"
+                    android:text="Set 1 -> A I U E O"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/kbutton_set1"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="#DE3213"
+                    android:fontFamily="@font/open_sans"
+                    android:onClick="onClickButtonSet1"
+                    android:text="@string/Katakana_Set1"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    android:textColor="@android:color/white"
+                    android:textSize="25dp"
+                    app:cornerRadius="24dp" />
+            </LinearLayout>
+
+            <!-- Button Set 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Set 2 -> KA KI KU KE KO"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/kbutton_set2"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="#DE3213"
+                    android:fontFamily="@font/open_sans"
+                    android:text="@string/Katakana_Set2"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    android:textColor="@android:color/white"
+                    android:textSize="25dp"
+                    app:cornerRadius="24dp" />
+            </LinearLayout>
+
+            <!-- Button Set 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Set 3 -> SA SHI SU SE SO"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/kbutton_set3"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="#DE3213"
+                    android:fontFamily="@font/open_sans"
+                    android:text="@string/Katakana_Set3"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    android:textColor="@android:color/white"
+                    android:textSize="25dp"
+                    app:cornerRadius="24dp" />
+            </LinearLayout>
+
+            <!-- Button Set 4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Set 4 -> TA CHI TSU TE TO"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/kbutton_set4"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="#DE3213"
+                    android:fontFamily="@font/open_sans"
+                    android:text="@string/Katakana_Set4"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    android:textColor="@android:color/white"
+                    android:textSize="25dp"
+                    app:cornerRadius="24dp" />
+            </LinearLayout>
+
+            <!-- Button Set 5-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Set 5 -> NA NI NU NE NO"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/kbutton_set5"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="#DE3213"
+                    android:fontFamily="@font/open_sans"
+                    android:text="@string/Katakana_Set5"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    android:textColor="@android:color/white"
+                    android:textSize="25dp"
+                    app:cornerRadius="24dp" />
+            </LinearLayout>
+
+            <!-- Button Set 6-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Set 6 -> HA HI FU HE HO"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/kbutton_set6"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="#DE3213"
+                    android:fontFamily="@font/open_sans"
+                    android:text="@string/Katakana_Set6"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    android:textColor="@android:color/white"
+                    android:textSize="25dp"
+                    app:cornerRadius="24dp" />
+            </LinearLayout>
+
+            <!-- Button Set 7-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Set 7 -> MA MI MU ME MO"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/kbutton_set7"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="#DE3213"
+                    android:fontFamily="@font/open_sans"
+                    android:text="@string/Katakana_Set7"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    android:textColor="@android:color/white"
+                    android:textSize="25dp"
+                    app:cornerRadius="24dp" />
+            </LinearLayout>
+
+            <!-- Button Set 8-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Set 8 -> YA YU YO"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/kbutton_set8"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="#DE3213"
+                    android:fontFamily="@font/open_sans"
+                    android:text="@string/Katakana_Set8"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    android:textColor="@android:color/white"
+                    android:textSize="25dp"
+                    app:cornerRadius="24dp" />
+            </LinearLayout>
+
+            <!-- Button Set 9 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Set 9 -> RA RI RU RE RO"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/kbutton_set9"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="#DE3213"
+                    android:fontFamily="@font/open_sans"
+                    android:text="@string/Katakana_Set9"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    android:textColor="@android:color/white"
+                    android:textSize="25dp"
+                    app:cornerRadius="24dp" />
+            </LinearLayout>
+
+            <!-- Button Set 10 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Set 10 -> WA WO N"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/kbutton_set10"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#DE3213"
+                    android:fontFamily="@font/open_sans"
+                    android:text="@string/Katakana_Set10"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    android:textColor="@android:color/white"
+                    android:textSize="25dp"
+                    app:cornerRadius="24dp" />
+            </LinearLayout>
+
+            <!-- Button Set 11 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Set 11 -> GA GI GU GE GO"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/kbutton_set11"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#DE3213"
+                    android:fontFamily="@font/open_sans"
+                    android:text="@string/Katakana_Set11"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    android:textColor="@android:color/white"
+                    android:textSize="25dp"
+                    app:cornerRadius="24dp" />
+            </LinearLayout>
+
+            <!-- Button Set 12 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Set 12 -> ZA JI ZU ZE ZO"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/kbutton_set12"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="#DE3213"
+                    android:fontFamily="@font/open_sans"
+                    android:text="@string/Katakana_Set12"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    android:textColor="@android:color/white"
+                    android:textSize="25dp"
+                    app:cornerRadius="24dp" />
+            </LinearLayout>
+
+            <!-- Button Set 13 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Set 13 -> DA DI DU DE DO"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/kbutton_set13"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="#DE3213"
+                    android:fontFamily="@font/open_sans"
+                    android:text="@string/Katakana_Set13"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    android:textColor="@android:color/white"
+                    android:textSize="25dp"
+                    app:cornerRadius="24dp" />
+            </LinearLayout>
+
+            <!-- Button Set 14 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Set 14 -> BA BI BU BE BO"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/kbutton_set14"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="#DE3213"
+                    android:fontFamily="@font/open_sans"
+                    android:text="@string/Katakana_Set14"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    android:textColor="@android:color/white"
+                    android:textSize="25dp"
+                    app:cornerRadius="24dp" />
+            </LinearLayout>
+
+            <!-- Button Set 15 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans"
+                    android:text="Set 15 -> PA PI PU PE PO"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/kbutton_set15"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="#DE3213"
+                    android:fontFamily="@font/open_sans"
+                    android:text="@string/Katakana_Set15"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    android:textColor="@android:color/white"
+
+                    android:textSize="25dp"
+                    app:cornerRadius="24dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

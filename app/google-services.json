@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "537800702377",
+    "project_id": "kanazonekoalakotlin",
+    "storage_bucket": "kanazonekoalakotlin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:537800702377:android:0f0be367421ac168126cb8",
+        "android_client_info": {
+          "package_name": "com.example.kanazonekoalakotlin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAV_n8jQquqazUwE5ugYfeMNF6_BHvWE34"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

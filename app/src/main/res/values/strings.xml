@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name" translatable="false">KanazoneKoalaKotlin</string>
+    <string name="Hiragana_Set1" translatable="false">あいうえお</string>
+    <string name="Hiragana_Set2" translatable="false">かきくけこ</string>
+    <string name="Hiragana_Set3" translatable="false">さしすせそ</string>
+    <string name="Hiragana_Set4" translatable="false">たちつてと</string>
+    <string name="Hiragana_Set5" translatable="false">なにぬねの</string>
+    <string name="Hiragana_Set6" translatable="false">はひふへほ</string>
+    <string name="Hiragana_Set7" translatable="false">まみむめも</string>
+    <string name="Hiragana_Set9" translatable="false">らりるれろ</string>
+    <string name="Hiragana_Set8" translatable="false">やゆよ</string>
+    <string name="Hiragana_Set10" translatable="false">わをん</string>
+    <string name="Hiragana_Set11" translatable="false">がぎぐげご</string>
+    <string name="Hiragana_Set12" translatable="false">ざじずぜぞ</string>
+    <string name="Hiragana_Set13" translatable="false">だぢづでど</string>
+    <string name="Hiragana_Set14" translatable="false">ばびぶべぼ</string>
+    <string name="Hiragana_Set15" translatable="false">ぱぴぷぺぽ</string>
+    <string name="Katakana_Set1" translatable="false">アイウエオ</string>
+    <string name="Katakana_Set2" translatable="false">カキクケコ</string>
+    <string name="Katakana_Set3" translatable="false">サシスセソ</string>
+    <string name="Katakana_Set4" translatable="false">タチツテト</string>
+    <string name="Katakana_Set5" translatable="false">ナニヌネノ</string>
+    <string name="Katakana_Set6" translatable="false">ハヒフヘホ</string>
+    <string name="Katakana_Set7" translatable="false">マミムメモ</string>
+    <string name="Katakana_Set8" translatable="false">ヤユヨ</string>
+    <string name="Katakana_Set9" translatable="false">ラリルレロ</string>
+    <string name="Katakana_Set10" translatable="false">ワヲン</string>
+    <string name="Katakana_Set11" translatable="false">ガギグゲゴ</string>
+    <string name="Katakana_Set12" translatable="false">ザジズゼゾ</string>
+    <string name="Katakana_Set13" translatable="false">ダヂヅデド</string>
+    <string name="Katakana_Set14" translatable="false">バビブベボ</string>
+    <string name="Katakana_Set15" translatable="false">パピプペポ</string>
+
+</resources>

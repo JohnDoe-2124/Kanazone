@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HiraganaActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#DE3213"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_back_arrow"
+        app:titleTextColor="@android:color/white" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <!-- Toolbar -->
+            <!-- Button Set 1 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp">
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="Set 1 -> A I U E O"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/open_sans"/>
+                <!-- Button Set 2 -->
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="55dp"
+                    android:text="@string/Hiragana_Set1"
+                    android:textSize="25dp"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/open_sans"
+                    android:id="@+id/button_set1"
+                    android:backgroundTint="#DE3213"
+                    app:cornerRadius="24dp"
+                    android:onClick="onClickButtonSet1"/>
+            </LinearLayout>
+
+            <!-- Button Set 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp">
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set 2 -> KA KI KU KE KO"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/open_sans"/>
+                <!-- Button Set 2 -->
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="55dp"
+                    android:text="@string/Hiragana_Set2"
+                    android:textSize="25dp"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/open_sans"
+                    android:id="@+id/button_set2"
+                    android:backgroundTint="#DE3213"
+                    app:cornerRadius="24dp"
+                    android:onClick="onClickButtonSet2"/>
+            </LinearLayout>
+
+            <!-- Button Set 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp">
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set 3 -> SA SHI SU SE SO"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/open_sans"/>
+                <!-- Button Set 3 -->
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="55dp"
+                    android:text="@string/Hiragana_Set3"
+                    android:textSize="25dp"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/open_sans"
+                    android:id="@+id/button_set3"
+                    android:backgroundTint="#DE3213"
+                    app:cornerRadius="24dp"
+                    android:onClick="onClickButtonSet3"/>
+            </LinearLayout>
+
+            <!-- Button Set 4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp">
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set 4 -> TA CHI TSU TE TO"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/open_sans"/>
+                <!-- Button Set 4 -->
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="55dp"
+                    android:text="@string/Hiragana_Set4"
+                    android:textSize="25dp"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/open_sans"
+                    android:id="@+id/button_set4"
+                    android:backgroundTint="#DE3213"
+                    app:cornerRadius="24dp"
+                    android:onClick="onClickButtonSet4"/>
+            </LinearLayout>
+
+            <!-- Button Set 5 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp">
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set 5 -> NA NI NU NE NO"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/open_sans"/>
+                <!-- Button Set 5 -->
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="55dp"
+                    android:textSize="25dp"
+                    android:text="@string/Hiragana_Set5"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/open_sans"
+                    android:id="@+id/button_set5"
+                    android:backgroundTint="#DE3213"
+                    app:cornerRadius="24dp"
+                    android:onClick="onClickButtonSet5"/>
+            </LinearLayout>
+
+            <!-- Button Set 6 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp">
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set 6 -> HA HI FU HE HO"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/open_sans"/>
+                <!-- Button Set 6 -->
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="55dp"
+                    android:text="@string/Hiragana_Set6"
+                    android:textSize="25dp"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/open_sans"
+                    android:id="@+id/button_set6"
+                    android:backgroundTint="#DE3213"
+                    app:cornerRadius="24dp"
+                    android:onClick="onClickButtonSet6"/>
+            </LinearLayout>
+
+            <!-- Button Set 7 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp">
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set 7 -> MA MI MU ME MO"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/open_sans"/>
+                <!-- Button Set 7 -->
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="55dp"
+                    android:text="@string/Hiragana_Set7"
+                    android:textSize="25dp"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/open_sans"
+                    android:id="@+id/button_set7"
+                    android:backgroundTint="#DE3213"
+                    app:cornerRadius="24dp"
+                    android:onClick="onClickButtonSet7"/>
+            </LinearLayout>
+
+            <!-- Button Set 8 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp">
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set 8 -> YA YU YO"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/open_sans"/>
+                <!-- Button Set 8 -->
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="55dp"
+                    android:textSize="25dp"
+                    android:text="@string/Hiragana_Set8"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/open_sans"
+                    android:id="@+id/button_set8"
+                    android:backgroundTint="#DE3213"
+                    app:cornerRadius="24dp"
+                    android:onClick="onClickButtonSet8"/>
+            </LinearLayout>
+
+            <!-- Button Set 9 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp">
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set 9 -> RA RI RU RE RO"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/open_sans"/>
+                <!-- Button Set 9 -->
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="55dp"
+                    android:textSize="25dp"
+                    android:text="@string/Hiragana_Set9"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/open_sans"
+                    android:id="@+id/button_set9"
+                    android:backgroundTint="#DE3213"
+                    app:cornerRadius="24dp"
+                    android:onClick="onClickButtonSet9"/>
+            </LinearLayout>
+
+            <!-- Button Set 10 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp">
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set 10 -> WA WO N"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/open_sans"/>
+                <!-- Button Set 10 -->
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="55dp"
+                    android:textSize="25dp"
+                    android:text="@string/Hiragana_Set10"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/open_sans"
+                    android:id="@+id/button_set10"
+                    android:backgroundTint="#DE3213"
+                    app:cornerRadius="24dp"
+                    android:onClick="onClickButtonSet10"/>
+            </LinearLayout>
+
+            <!-- Button Set 11 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp">
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set 11 -> GA GI GU GE GO"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/open_sans"/>
+
+                <!-- Button Set 11 -->
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="55dp"
+                    android:textSize="25dp"
+                    android:text="@string/Hiragana_Set11"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/open_sans"
+                    android:id="@+id/button_set11"
+                    android:backgroundTint="#DE3213"
+                    app:cornerRadius="24dp"
+                    android:onClick="onClickButtonSet11"/>
+            </LinearLayout>
+
+            <!-- Button Set 12 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp">
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set 12 -> ZA JI ZU ZE ZO"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/open_sans"/>
+                <!-- Button Set 12 -->
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="55dp"
+                    android:textSize="25dp"
+                    android:text="@string/Hiragana_Set12"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/open_sans"
+                    android:id="@+id/button_set12"
+                    android:backgroundTint="#DE3213"
+                    app:cornerRadius="24dp"
+                    android:onClick="onClickButtonSet12"/>
+            </LinearLayout>
+
+            <!-- Button Set 13 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp">
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set 13 -> DA DI DU DE DO"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/open_sans"/>
+                <!-- Button Set 13 -->
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="55dp"
+                    android:textSize="25dp"
+                    android:text="@string/Hiragana_Set13"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/open_sans"
+                    android:id="@+id/button_set13"
+                    android:backgroundTint="#DE3213"
+                    app:cornerRadius="24dp"
+                    android:onClick="onClickButtonSet13"/>
+            </LinearLayout>
+
+            <!-- Button Set 14 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp">
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set 14 -> BA BI BU BE BO"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/open_sans"/>
+                <!-- Button Set 14 -->
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="55dp"
+                    android:textSize="25dp"
+                    android:text="@string/Hiragana_Set14"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/open_sans"
+                    android:id="@+id/button_set14"
+                    android:backgroundTint="#DE3213"
+                    app:cornerRadius="24dp"
+                    android:onClick="onClickButtonSet14"/>
+            </LinearLayout>
+
+            <!-- Button Set 15 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp">
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Set 15 -> PA PI PU PE PO"
+                    android:textAppearance="?attr/textAppearanceHeadline6"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/open_sans"/>
+                <!-- Button Set 15 -->
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="55dp"
+                    android:textSize="25dp"
+                    android:text="@string/Hiragana_Set15"
+                    android:textAppearance="?attr/textAppearanceBody1"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/open_sans"
+                    android:id="@+id/button_set15"
+                    android:backgroundTint="#DE3213"
+                    app:cornerRadius="24dp"
+                    android:onClick="onClickButtonSet15"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

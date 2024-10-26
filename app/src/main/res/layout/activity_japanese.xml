@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JapaneseActivity">
+    <!-- Toolbar -->
+    <!-- Toolbar -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#DE3213"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_back_arrow"
+        app:titleTextColor="@android:color/white" />
+    <!-- Image View -->
+
+    <!-- Container for MaterialCardViews -->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/jpbg"
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView">
+
+        <!-- Top left card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/topLeftCard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            app:strokeColor="@color/red"
+            app:strokeWidth="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/topRightCard"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/bottomLeftCard"
+            android:layout_margin="8dp"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <!-- Content inside top left card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@drawable/gradient_red">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/hiragana"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:background="?android:attr/selectableItemBackgroundBorderless" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/topLeftTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Japanese"
+                    android:fontFamily="@font/open_sans"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:layout_marginTop="8dp"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Top right card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/topRightCard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            app:strokeColor="@color/red"
+            app:strokeWidth="2dp"
+            app:layout_constraintStart_toEndOf="@id/topLeftCard"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/bottomRightCard"
+            android:layout_margin="8dp"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <!-- Content inside top right card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@drawable/gradient_red">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/katakana"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:background="?android:attr/selectableItemBackgroundBorderless" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/topRightTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Japanese"
+                    android:fontFamily="@font/open_sans"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:layout_marginTop="8dp"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Bottom left card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/bottomLeftCard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            app:strokeColor="@color/red"
+            app:strokeWidth="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/bottomRightCard"
+            app:layout_constraintTop_toBottomOf="@id/topLeftCard"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_margin="8dp"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <!-- Content inside bottom left card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@drawable/gradient_red">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/typing"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:background="?android:attr/selectableItemBackgroundBorderless" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/bottomLeftTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Japanese"
+                    android:fontFamily="@font/open_sans"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:layout_marginTop="8dp"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Bottom right card -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/bottomRightCard"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            app:strokeColor="@color/red"
+            app:strokeWidth="2dp"
+            app:layout_constraintStart_toEndOf="@id/bottomLeftCard"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/topRightCard"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_margin="8dp"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <!-- Content inside bottom right card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@drawable/gradient_red">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/writing"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:background="?android:attr/selectableItemBackgroundBorderless" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/bottomRightTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Japanese"
+                    android:fontFamily="@font/open_sans"
+                    android:textColor="@color/black"
+                    android:textSize="30sp"
+                    android:layout_marginTop="8dp"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
